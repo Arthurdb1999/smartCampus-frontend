@@ -22,7 +22,7 @@ export default function Computers() {
     return (
         
         <>
-            <h4>{handleResearchRoom()}</h4>
+            <h4>aaaa{handleResearchRoom()}</h4>
         </>
     );
 }
