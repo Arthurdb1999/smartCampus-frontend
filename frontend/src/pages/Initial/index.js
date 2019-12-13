@@ -4,11 +4,6 @@ import './index.css';
 
 export default function Initial({ history }) {
 
-    function handleWeb1(){
-        //return window.open("http://smartcampusifsc.herokuapp.com", "_blank");
-        return history.push('/rooms');
-    }
-
     return (
         <ul className = 'conteiner'>
             <h1>
@@ -19,11 +14,11 @@ export default function Initial({ history }) {
             <button className="btn1" onClick={() => history.push('/computers')}>
                 Disponibilidade dos computadores da Sala de Pesquisa
           </button>
-            <button className="btn2" onClick={() => handleWeb1()}>
+            <button className="btn2" onClick={() => history.push('/getCourses')}>
                 Visualizador de horários das aulas
           </button>
-            <button className="btn3">
-                Web Service 3
+            <button className="btn3" onClick={() => history.push('/keys')}>
+                Chaves das Salas de Aula
           </button>
         </ul>
     );
