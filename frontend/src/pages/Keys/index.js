@@ -18,7 +18,7 @@ export default function Keys() {
 
         handleKeys();
 
-    }, []);
+    });
 
     // function filterByKey(id){
     //     console.log(id)
