@@ -7,4 +7,4 @@ Consultar link para mais detalhes sobre a api:
 ### https://github.com/Arthurdb1999/smartCampus-backend
 
 ## Observações
-Foi utilizada variáveis de ambientes que são setadas diretamente no Heroku
+Foram utilizadas variáveis de ambientes que são setadas diretamente no Heroku
