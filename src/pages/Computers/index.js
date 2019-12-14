@@ -1,11 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
+import socketio from 'socket.io-client';
+
 import './styles.css';
-import pc from '../../assets/pc.png'
+import pc from '../../assets/pc.png';
 
 export default function Computers() {
 
     const [computers, setComputers] = useState([]);
+    //const [requests, setRequests] = useState([]);
+
+    useEffect(() => {
+        const socket = socketio('http://localhost:3000');
+
+        socket.on('change_computer', data => {
+            console.log(data);
+        })
+    }, [])
 
     useEffect(() => {
         async function handleResearchRoom() {
