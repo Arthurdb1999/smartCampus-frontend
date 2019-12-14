@@ -35,14 +35,19 @@
   }
 
 ul.computers-list{
-  position: absolute;
-  left: 20px;
-  width: 25%;
-  height: auto;
   display: flex;
   flex-direction: row;
+  list-style-type: none; 
+  margin-left: 10px;
 }
 
 ul.computers-list li{
-  margin-left: 20px;
+  margin-left: 17px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+ul.computers-list li header img {
+  height: 104px;
+  width: 104px;
 }

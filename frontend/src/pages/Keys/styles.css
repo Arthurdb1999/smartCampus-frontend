@@ -1,0 +1,12 @@
+ul.keys-list {
+    list-style-type: none;
+}
+
+ul.keys-list li {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+ul.keys-list li span {
+    font-size: 18px;
+}

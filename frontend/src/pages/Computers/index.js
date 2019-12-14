@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
 import './styles.css';
-import computador from '../../assets/computador-3.gif'
+import pc from '../../assets/pc.png'
 
 export default function Computers() {
 
@@ -31,7 +31,7 @@ export default function Computers() {
                 {computers.map(computer => (
                     <li key={computer._id}>
                             <header>
-                                <img src = {computador} alt = "computador"/>
+                                <img src = {pc} alt = "pc"/>
                             </header>
                         <span>
                         <strong>{computer.idPc} - </strong>

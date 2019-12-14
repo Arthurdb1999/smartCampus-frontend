@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api3 from '../../services/api3';
+import './styles.css';
 
 
 export default function Keys() {
@@ -17,9 +18,6 @@ export default function Keys() {
 
         handleKeys();
 
-        console.log(keys);
-        console.log(reserves);
-
     }, []);
 
     // function filterByKey(id){
@@ -34,13 +32,14 @@ export default function Keys() {
             <ul className="keys-list">
                 {keys.map(key => (
                     <li key={key.id}>
-                        <br/><br/>
                         <span>
-                            <strong>Sala  {key.sala}</strong>
+                            <strong>{key.sala}</strong>
                             <br/>
-                            <strong>Descrição:  </strong>  {key.descricao}
-                            <br/>               
-                            {/* <strong>xablau:  </strong> {filterByKey(key.id)} */}
+                            <strong>Descrição: </strong>{key.descricao}
+                            <br/>
+                            {/* <strong>retirada/devolvida:  </strong> {filterByKey(key.id)} */}
+                            <strong>Retirada / Devolvida: </strong>
+                            <br/><br/><br/> 
                         </span>
                     </li>
                 ))}

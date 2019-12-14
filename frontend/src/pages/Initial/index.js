@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './styles.css';
 
 
 export default function Initial({ history }) {
@@ -14,8 +14,8 @@ export default function Initial({ history }) {
             <button className="btn1" onClick={() => history.push('/computers')}>
                 Disponibilidade dos computadores da Sala de Pesquisa
           </button>
-            <button className="btn2" onClick={() => history.push('/getCourses')}>
-                Visualizador de horários das aulas
+            <button className="btn2" onClick={() => history.push('/menus')}>
+                Cardápios da Cantina
           </button>
             <button className="btn3" onClick={() => history.push('/keys')}>
                 Chaves das Salas de Aula
