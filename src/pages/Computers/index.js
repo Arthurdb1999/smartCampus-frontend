@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import api from '../../services/api';
 import socketio from 'socket.io-client';
 
@@ -8,15 +8,18 @@ import pc from '../../assets/pc.png';
 export default function Computers() {
 
     const [computers, setComputers] = useState([]);
-    //const [requests, setRequests] = useState([]);
+    const [requests, setRequests] = useState([]);
+
+    const socket = socketio('http://localhost:3000');
+     
 
     useEffect(() => {
-        const socket = socketio('http://localhost:3000');
-
         socket.on('change_computer', data => {
-            console.log(data);
+            const response = api.get('/computers');
+            setComputers(response.data);
+            //setRequests(data);
         })
-    }, [])
+    }, [computers, socket])
 
     useEffect(() => {
         async function handleResearchRoom() {
