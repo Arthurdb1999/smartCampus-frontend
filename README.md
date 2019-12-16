@@ -21,7 +21,7 @@ Utilizado ***GET*** para listar os status das chaves das salas do IFSC - Campus 
 > Consultar documentação Postman: https://bit.ly/2tbbTeG
 
 ### Install Dependencies
---- `yarn install`
+--- `yarn install` ou `npm install`
 
 ### Run Project
---- `yarn start`
+--- `yarn start` ou `npm run start`
